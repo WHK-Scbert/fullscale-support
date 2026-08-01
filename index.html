@@ -25,21 +25,11 @@
   }
   main { max-width: 680px; margin: 0 auto; }
   header { text-align: center; margin-bottom: 44px; }
-  .dial {
-    width: 84px; height: 84px; margin: 0 auto 18px;
-    border: 3px solid var(--text); border-radius: 50%;
-    position: relative;
-  }
-  .dial::before {
-    content: ""; position: absolute; left: 50%; top: 10%;
-    width: 4px; height: 62%; transform: translateX(-50%);
-    background: var(--magenta); border-radius: 2px;
-  }
-  .dial::after {
-    content: ""; position: absolute; left: 50%; top: 4%;
-    transform: translateX(-50%);
-    border-left: 10px solid transparent; border-right: 10px solid transparent;
-    border-bottom: 14px solid var(--magenta);
+  .appicon {
+    width: 96px; height: 96px; margin: 0 auto 18px; display: block;
+    border-radius: 22px;
+    border: 1px solid var(--stroke);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.5);
   }
   h1 { font-size: 30px; font-weight: 900; letter-spacing: 2px; }
   .tag { color: var(--dim); font-size: 15px; margin-top: 4px; }
@@ -68,7 +58,7 @@
 <body>
 <main>
   <header>
-    <div class="dial" role="img" aria-label="Full Scale app icon: compass dial with course arrow"></div>
+    <img class="appicon" src="icon.png" alt="Full Scale app icon" width="96" height="96">
     <h1>FULL SCALE</h1>
     <p class="tag">HSI &amp; radio-navigation procedural trainer for iPhone and iPad</p>
   </header>
